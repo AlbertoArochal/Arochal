@@ -1,6 +1,10 @@
 import pandas as pd 
 import numpy as np
 
+    """_summary_: Funcion para limpiar, quitar duplicados y valores nulos
+    asi como reducir columnas para adaptarlo a las necesidades del trabajo
+    """
+
 def prep_csv(nombre = input('Escribe el nombre del archivo: ')):
     columnas = ['phone', 'name', 'email', 'DNI', 'remaining', 'loan']
     df = pd.read_csv('/home/arochal/repos/Arochal/py_pro/data_sq/' + str(nombre))
