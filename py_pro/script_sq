@@ -1,0 +1,13 @@
+import pandas as pd 
+import numpy as np
+
+columnas = ['phone', 'name', 'email', 'DNI', 'remaining', 'loan']
+df = pd.read_csv('/home/arochal/repos/Arochal/py_pro/data_sq/Carga_Sequra_23062022_Hoja_1.csv')
+df.columns = columnas
+
+df = df.dropna().drop_duplicates('phone')
+df['phone'] = '+34' + df['phone'].astype('str')
+
+df.to_csv('/home/arochal/repos/Arochal/py_pro/data_sq/seq_result.csv', sep = ';', index = False)
+
+
