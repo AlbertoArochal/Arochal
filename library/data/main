@@ -1,0 +1,50 @@
+from books import *
+from users import *
+from registry_db import *
+from datetime import date
+
+    """Programa de gestión de una biblioteca, que permite realizar
+    distintas acciones según el tipo de usuario, y que efectúa los 
+    cambios pertinentes en varios dataframe de registro.
+
+    The Library is open.
+    """
+
+class User:
+    def __init__(self, nick, full_name, reg_date, age, role):
+        self.nick = nick
+        self.full_name = full_name 
+        self.reg_date = reg_date
+        self.age = age
+        self.role = role
+
+class Staff(user):
+    def __init__(self, nick, full_name, reg_date, age, role):
+        super().__init__(nick, full_name, reg_date, age, role)
+
+
+class Adult(staff):
+    def __init__(self, nick, full_name, reg_date, age, role):
+        super().__init__(nick, full_name, reg_date, age, role)
+
+class Young(adult):
+    def __init__(self,nick, full_name, reg_date, age, role):
+        super().__init__(full_name, nick, reg_date, age, role)
+
+
+
+def sign_up(nick, full_name, reg_date, age, role):
+    nick = (input('Choose a nickname: '))
+    full_name = (input('Please, introduce your name: '))
+    reg_date = str(date.today())
+    age = (input('Please, introduce your age: '))
+    role = (input('Please, introduce your role (Staff, Adult or Young)'))
+    valid_roles = ['Staff', 'Adult', 'Young']
+    exec('nick = role(full_name, reg_date, age, role)
+
+
+book_catalogue = pd.red_csv('/home/arochal/repos/Arochal/library/data/data/books.csv')
+
+
+
+    

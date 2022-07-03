@@ -1,0 +1,24 @@
+import numpy as np 
+import random
+import pandas as pd
+def rps(movimiento_h = input('piedra, papel o tijera: ')):
+    lista = ['piedra', 'papel', 'tijera']
+    move_m = lista[random.randint(0,2)]
+    registro: pd.dataframe()
+    print('el magistral movimiento del la maquina es ' + str(move_m)
+    + ' ' + 'y el absurdo movimiento del saco de carne es ' + str(movimiento_h))
+    if move_m == 'piedra' and movimiento_h == 'tijera':
+        print('Tu pierdes humano asqueroso')
+    elif move_m == movimiento_h:
+        print('Empate!')
+    elif move_m == 'tijera' and movimiento_h == 'papel':
+        print('Con mi tijera corto tu papel, humano asqueroso')
+    elif move_m == 'papel' and movimiento_h == 'piedra':
+        print('Papel gana a piedra!!! jajaja')
+    else:
+        print('el humano gana, como es posible?')
+
+rps()
+    
+
+
