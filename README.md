@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @AlbertoArochal
-- 👀 I’m interested in python, data, jscript and coding in general
+- 👀 I’m interested in python, data, jscript, html5, and CSS
 - 🌱 I’m currently learning Python
-- 💞️ I’m looking to collaborate on Data Science/analysis
+- 💞️ I’m looking to collaborate on Data Science/analysis or javascript projects
 - 📫 How to reach me arochal@uoc.edu
 
 Hello Odin!
