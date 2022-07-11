@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 
 class library:
-    secret_key = random.randint(1000, 9999)                   # to get admin access
-    delkey = random.randint(100, 999)                         # to get permission for deletion
+    secret_key = random.randint(1000, 9999)                   
+    delkey = random.randint(100, 999)                         
 
     def __init__(self, libraryName, allBooks, listOfBooks):
         self.lendbooklis = {}
@@ -17,10 +17,10 @@ class library:
     def displayAllBooks(self):
         print(self.allBooks)
 
-    def displayBooks(self):                           # to display all available books
+    def displayBooks(self):                           
         return print(self.list_of_books)
  
-    def lendBook(self):                               # to lend books 
+    def lendBook(self):                                
         lenderName = input("Enter your name : ")
         lendBook = input("Enter book you want to lend : ")
         if lendBook in self.list_of_books:
@@ -30,21 +30,21 @@ class library:
         else:
             print(f"Book '{lendBook}' is currently not available")
 
-    def displaylendedbook(self):                                # lend books info
+    def displaylendedbook(self):                               
         return print(self.lendbooklis)
 
-    def addBook(self):                                          # to add new boos to library
+    def addBook(self):                                          
         addbok = input("Enter the book you want to add : ")
         self.list_of_books.append(addbok)
         self.allBooks.append(addbok)
 
-    def returnBook(self):                                      # to return a lend book
+    def returnBook(self):                                      
         retname = input("Enter your name : ")
         retbok = input("Enter book you want to return : ")
         self.list_of_books.append(retbok)
         self.lendbooklis.pop(retname)
 
-    def removeBook(self):                                     # to delete books from libraby permanently
+    def removeBook(self):                                     
         count = 2
         while (count > 0):
             rmvkey = input("Enter 'Deletion-key' = ")
@@ -98,7 +98,6 @@ class library:
                 count -= 1
                 continue
 
-               # admin() method, for Admin functions (includes all functions)
 def admin():
     print("\tDisplay all available books --> 1\tLend book --> 2\n\tDisplay lended books --> 3\t\t\tAdd new book --> 4"
           "\n\tReturn a book --> 5\t\t\t\t\tRemove book --> 6\n\tDisplay All books --> 7"
@@ -134,7 +133,6 @@ def admin():
         print(e)
 
 
-# userfun() method, for user functions (allows display, lend & return books)
 def userfun():
     print("  Display entire catalogue --> 1\t\t\tLend book --> 2\n\t\t    Display all books --> 4\t"
           "\tReturn a book --> 3\nExit --> 0")
@@ -167,8 +165,6 @@ while exit is not True:
         bookstock = {'title': input()}
         initial_book_list.append(bookstock, ignore_index=True)
     ALLBOOKS = initial_book_list[:]
-    # library.secret_key = random.randint(1000, 9999)
-    # library.delkey = random.randint(100, 999)
     xlib = library(libname, ALLBOOKS, initial_book_list)
 
     print(f"\tYour secret key = {library.secret_key}\n\t Your deletion key = {library.delkey}\n")
@@ -180,9 +176,9 @@ while exit is not True:
     else:
         break
 
-lib2 = library.secret_key                 # secret key object
+lib2 = library.secret_key                 
 
-if __name__ == '__main__':                # main function
+if __name__ == '__main__':                
     localtime = time.asctime(time.localtime(time.time()))
     print(f"{localtime}\t\t\t\t\t\t\tExit --> 0")
     Exit = False
