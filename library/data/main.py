@@ -54,7 +54,7 @@ class library:
                     self.list_of_books.remove(delbook)
                     self.allBooks.remove(delbook)
                     break
-                else: print("No such book in library to remove")
+                else: print("The book is not present on our catalogue")
             else:
                     print("Invalid key!")
             count -= 1
@@ -101,7 +101,7 @@ class library:
 def admin():
     print("\tDisplay all available books --> 1\tLend book --> 2\n\tDisplay lended books --> 3\t\t\tAdd new book --> 4"
           "\n\tReturn a book --> 5\t\t\t\t\tRemove book --> 6\n\tDisplay All books --> 7"
-          "\t\t\t\tChange Keys --> 8\n\tExit --> 0")
+          "\t\t\t\tChange Key/Password --> 8\n\tExit --> 0")
     choice = int(input("Enter your choice : "))
     Exit = False
     try:
@@ -158,7 +158,7 @@ def userfun():
 exit = False
 while exit is not True:
     libname = input("Enter your library name : ")
-    initial_stock = int(input("Enter amount of books you're putting in library : "))
+    initial_stock = int(input("Enter the amount of books you're putting in library : "))
     initial_book_list = pd.read_csv('/home/arochal/repos/Arochal/library/data/data/books.csv', usecols = ['title'], nrows = initial_stock)
     print("enter books")
     for item in range(initial_stock):
