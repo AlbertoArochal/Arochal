@@ -99,9 +99,9 @@ class library:
                 continue
 
 def admin():
-    print("\tDisplay all available books --> 1\tLend book --> 2\n\tDisplay lended books --> 3\t\t\tAdd new book --> 4"
-          "\n\tReturn a book --> 5\t\t\t\t\tRemove book --> 6\n\tDisplay All books --> 7"
-          "\t\t\t\tChange Key/Password --> 8\n\tExit --> 0")
+    print("\t Display all books --> 1\t Lend book --> 2\n Display lended books --> 3 Add new book --> 4"
+          "\n\tReturn a book --> 5tRemove book --> 6\nDisplay All books --> 7"
+          "Change Key/Password --> 8\n Exit --> 0")
     choice = int(input("Enter your choice : "))
     Exit = False
     try:
@@ -109,7 +109,7 @@ def admin():
             if choice == 0:
                 localtime = time.asctime(time.localtime(time.time()))
                 Exit = True
-                return f"Thank You, hope you like our service!\t\t\t\t{localtime}"
+                return f"Thank You, hope you like our service!{localtime}"
             elif choice == 1:
                 xlib.displayBooks()
             elif choice == 2:
@@ -134,7 +134,7 @@ def admin():
 
 
 def userfun():
-    print("  Display entire catalogue --> 1\t\t\tLend book --> 2\n\t\t    Display all books --> 4\t"
+    print("  Display catalogue --> 1Lend book --> 2\n\  Display all books --> 4\t"
           "\tReturn a book --> 3\nExit --> 0")
     choice = int(input("Enter your choice : "))
     Exit = False
@@ -142,7 +142,7 @@ def userfun():
         if choice == 0:
             localtime = time.asctime(time.localtime(time.time()))
             Exit = True
-            return f"Thank You, please visit us again soon!!\t\t\t\t"
+            return f"Thank You, please visit us again soon!!"
         elif choice == 1:
             xlib.displayBooks()
         elif choice == 2:
@@ -170,7 +170,7 @@ while exit is not True:
     print(f"\tYour secret key = {library.secret_key}\n\t Your deletion key = {library.delkey}\n")
 
     all_set = input("We're all set, press any key to start\t\t\tpress 0 to make changes or setup again\n"
-                    "\t\t\t\t\t\t\t\t\t\t ")
+                    "")
     if all_set == "0":
         continue
     else:
@@ -180,7 +180,7 @@ lib2 = library.secret_key
 
 if __name__ == '__main__':                
     localtime = time.asctime(time.localtime(time.time()))
-    print(f"{localtime}\t\t\t\t\t\t\tExit --> 0")
+    print(f"{localtime}Exit --> 0")
     Exit = False
     while Exit is not True:
         user = input("Are you a member of the staff (y/n) : ")
@@ -189,14 +189,14 @@ if __name__ == '__main__':
             while(kc > 0):
                 adkey = int(input("Enter Staff key : "))
                 if adkey == lib2:
-                    print("////////////WELCOME DEAR CUSTOMER/////////////")
+                    print("WELCOME DEAR CUSTOMER")
                     print(admin())
                     break
                 else:
                     print("Invalid key!")
                 kc -= 1
         elif user == "n":
-            print(f"/////////////////////Welcome to {xlib.libraryName}//////////////////////// ")
+            print(f"Welcome to {xlib.libraryName}")
             print(userfun())
         elif user == "0":
             Exit = True
