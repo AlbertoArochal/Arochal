@@ -2,25 +2,26 @@
 import time
 import random
 import pandas as pd
-import numpy as np
 
-class library:
+'''Library system management'''
+
+class library: # Class library that generate a random key in order to acces staff functions, and another one to be able to delete books of the catalogue
     secret_key = random.randint(1000, 9999)                   
     delkey = random.randint(100, 999)                         
 
-    def __init__(self, libraryName, allBooks, listOfBooks):
+    def __init__(self, libraryName, allBooks, listOfBooks): 
         self.lendbooklis = {}
         self.allBooks = allBooks
         self.list_of_books = listOfBooks
         self.libraryName = libraryName
 
-    def displayAllBooks(self):
+    def displayAllBooks(self):              # Display books of the catalogue. You must choose the amount of books you want to import from a 500+ books stored in a csv, when you start the program.
         print(self.allBooks)
 
     def displayBooks(self):                           
         return print(self.list_of_books)
  
-    def lendBook(self):                                
+    def lendBook(self):                            #lend book functions, available to users, but not to staff.  
         lenderName = input("Enter your name : ")
         lendBook = input("Enter book you want to lend : ")
         if lendBook in self.list_of_books:
@@ -33,18 +34,18 @@ class library:
     def displaylendedbook(self):                               
         return print(self.lendbooklis)
 
-    def addBook(self):                                          
+    def addBook(self):                                          #Add book function, available to staff, not to regular users of the library.
         addbok = input("Enter the book you want to add : ")
         self.list_of_books.append(addbok)
         self.allBooks.append(addbok)
 
-    def returnBook(self):                                      
+    def returnBook(self):                                      # Returns a lend book to the available catalogue, available to regular users.
         retname = input("Enter your name : ")
         retbok = input("Enter book you want to return : ")
         self.list_of_books.append(retbok)
         self.lendbooklis.pop(retname)
 
-    def removeBook(self):                                     
+    def removeBook(self):                                     # Erase completely a book from the catalogue, available only to staff users with deletion random key.
         count = 2
         while (count > 0):
             rmvkey = input("Enter 'Deletion-key' = ")
@@ -59,7 +60,7 @@ class library:
                     print("Invalid key!")
             count -= 1
 
-    def changeKey(self):
+    def changeKey(self):                                    # Change staff key function. 
         key = int(input("Enter secret key : "))
         count = 2
         while count>0:
@@ -69,7 +70,7 @@ class library:
                     if keyChange == "1":
                         while True:
                             new_secretKey1 = int(input("Enter new Secret key : "))
-                            new_secretKey2 = int(input("Re-enter new Secret key : "))
+                            new_secretKey2 = int(input("Re enter new Secret key : "))
                             if new_secretKey1 == new_secretKey2:
                                 self.secret_key = new_secretKey1
                                 break
@@ -98,9 +99,12 @@ class library:
                 count -= 1
                 continue
 
+
+# Menu for staff members of the library available only if you introduce the correct key when you start the program.
+
 def admin():
     print("\t Display all books --> 1\t Lend book --> 2\n Display lended books --> 3 Add new book --> 4"
-          "\n\tReturn a book --> 5tRemove book --> 6\nDisplay All books --> 7"
+          "\n Return a book --> 5 Remove book --> 6\nDisplay All books --> 7"
           "Change Key/Password --> 8\n Exit --> 0")
     choice = int(input("Enter your choice : "))
     Exit = False
@@ -128,14 +132,15 @@ def admin():
                 xlib.changeKey()
             else:
                 print("Invalid choice")
-            choice = int(input("Enter your choice : "))
+            choice = int(input("Enter action : "))
     except Exception as e:
         print(e)
 
+#Regular user menu, available if you dont have staff key or choose to not introduce it.
 
 def userfun():
-    print("  Display catalogue --> 1Lend book --> 2\n\  Display all books --> 4\t"
-          "\tReturn a book --> 3\nExit --> 0")
+    print("  Display catalogue --> 1Lend book --> 2 Display all books --> 4\t"
+          "\tReturn a book --> 3 Exit --> 0")
     choice = int(input("Enter your choice : "))
     Exit = False
     while Exit is not True:
@@ -155,6 +160,8 @@ def userfun():
             print("Invalid choice")
         choice = int(input("Enter your choice : "))
 
+
+# Initial menu of the program. You must choose to introduce or not staff key, and the amount of books in the catalogue you want to get from csv file.
 exit = False
 while exit is not True:
     libname = input("Enter your library name : ")
@@ -169,7 +176,7 @@ while exit is not True:
 
     print(f"\tYour secret key = {library.secret_key}\n\t Your deletion key = {library.delkey}\n")
 
-    all_set = input("We're all set, press any key to start\t\t\tpress 0 to make changes or setup again\n"
+    all_set = input("We're all set, press any key to star press 0 to make changes or setup again\n"
                     "")
     if all_set == "0":
         continue
