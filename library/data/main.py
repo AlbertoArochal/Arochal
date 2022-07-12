@@ -5,7 +5,7 @@ import pandas as pd
 
 '''Library system management'''
 
-class library: # Class library that generate a random key in order to acces staff functions, and another one to be able to delete books of the catalogue
+class library:                  # Class library that generate a random key in order to acces staff functions, and another one to be able to delete books of the catalogue
     secret_key = random.randint(1000, 9999)                   
     delkey = random.randint(100, 999)                         
 
@@ -174,9 +174,9 @@ while exit is not True:
     ALLBOOKS = initial_book_list[:]
     xlib = library(libname, ALLBOOKS, initial_book_list)
 
-    print(f"\tYour secret key = {library.secret_key}\n\t Your deletion key = {library.delkey}\n")
+    print(f"\tYour secret key = {library.secret_key} Your deletion key = {library.delkey}")
 
-    all_set = input("We're all set, press any key to star press 0 to make changes or setup again\n"
+    all_set = input("We're all set, press any key to star press 0 to make changes or setup again"
                     "")
     if all_set == "0":
         continue
