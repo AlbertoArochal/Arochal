@@ -66,7 +66,7 @@ class library: # Class library that generate a random key in order to acces staf
         while count>0:
             if key == self.secret_key:
                 while True:
-                    keyChange = input("\t1 --> Change Secret Key\n\t2 --> Change deletion key")
+                    keyChange = input("1 --> Change Secret Key\n\t2 --> Change deletion key")
                     if keyChange == "1":
                         while True:
                             new_secretKey1 = int(input("Enter new Secret key : "))
@@ -161,7 +161,7 @@ def userfun():
         choice = int(input("Enter your choice : "))
 
 
-# Initial menu of the program. You must choose to introduce or not staff key, and the amount of books in the catalogue you want to get from csv file.
+# Menu where you must choose the amount of books in the catalogue you want to get from csv file.
 exit = False
 while exit is not True:
     libname = input("Enter your library name : ")
@@ -182,6 +182,8 @@ while exit is not True:
         continue
     else:
         break
+
+# Initial menu of the program, where tyou need to choose to enter as a member of the staff or not.
 
 lib2 = library.secret_key                 
 
