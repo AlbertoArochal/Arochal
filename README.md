@@ -2,7 +2,7 @@
 - 👀 I’m interested in python, data, jscript and coding in general
 - 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on Data Science/analysis
-- 📫 How to reach me arochal@uoc.edu
+- 📫 How to reach me arochaldev@gmail.com
 
 Hello Odin!
 
