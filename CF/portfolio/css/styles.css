@@ -1,0 +1,12 @@
+.menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
