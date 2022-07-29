@@ -1,12 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500;900&display=swap');
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
 .menu {
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(8, 0, 78);
+    padding-bottom: 18px;
+    color: aliceblue;
 }
 
 .subtitle {
     display:flex;
     justify-content: center;
     align-items: center;
-    color: blue;
+    color: white;
+    background-color: rgb(8, 0, 78)
 }
+body {
+    background-color: beige;
+}
+
+figure {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    shape-outside: circle();
+}
+
+.cody {
+    align-items:unset;
+}
+
