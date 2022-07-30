@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <section>
+        <form action="">
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Eg. Pepe">
+            </p>
+            <p>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" placeholder="Eg. Rodriguez Lopez"><br>
+            </p>
+            <p>
+                <label for="sexo">Sexo: </label>
+                <input type="radio" id="hombre" value="hombre" name="sexo">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" value="mujer" name="sexo">
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="no_binarie" value="no_binarie" name="sexo">
+                <label for="no_binarie">No Binarie</label>
+
+            </p>
+            <p>
+                <label for="correo">Correo: </label>
+                <input type="mail" name="correo" placeholder="Eg. someone@mail.com">
+            </p>
+            <p>
+                <label for="poblacion">Poblacion: </label>
+                <select name="poblacion" id="poblacion">
+                    <option value="madrid">Madrid</option>
+                    <option value="alicante">Alicante</option>
+                    <option value="sevilla">Sevilla</option>
+                    <option value="valencia"> Valencia</option>
+
+                </select><br><br>
+                <label for="descripcion">Descripcion: </label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="novedades">
+                <label for="novedades">Deseo recibir informacion sobre novedades y ofertas</label><br>
+                <input type="checkbox" name="condiciones">
+                <label for="condiciones">Declaro haber leido y aceptado las condiciones generales del programa y la
+                    normativa sobre proteccion de datos.</label>
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+
+</html>

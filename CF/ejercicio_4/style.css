@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=MuseoModerno:wght@700&display=swap');
+
+body {
+    background-color: rgb(203, 248, 226);
+}
+main {
+    width: 40%;
+    min-width: 400px;
+    max-width: 400px;
+    align-content: center;
+}
+
+h1{
+    font-size: 51px;
+    color: #0a2ff1;
+    font-family: 'MuseoModerno', cursive;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Asap', sans-serif ;
+    color: blue;
+    font-weight: 400;
+    margin-top: -15px;
+}
+section{
+}
+#texto-principal{
+    font-family: 'Asap', bold;
+    color:#04146c
+}
+
+h3{
+    font-family: 'MuseoModerno', cursive;
+    color: #0a2ff1;
+    font-size: 45px ;
+    margin-bottom: 0px;
+}
+#conoce-mendoza {
+    background-color: #6b81ff;
+    color: rgb(255, 255, 255);
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    width: fit-content;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    border: #8a9af1;
+    border-radius: 7%;
+
+
+}
+#modo{
+    color: #8a9af1;
+    font-size: 149pt;
+    align-self: left;
+    font-family: 'MuseoModerno', cursive;
+    margin-top: 0%;
+
+}
+
+button{
+    color: blue;
+    background-color: mintcream;
+    font-family: 'Asap', bold;
+    padding: 30px;
+    font-size: large;
+    border-radius: 15px;
+    margin-top: 24px;
+    margin-bottom: -40px;
+    align-items: stretch;
+}
