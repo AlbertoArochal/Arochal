@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero {
+    background-image:
+        linear-gradient(rgba(86, 86, 247, 0.616), rgba(240, 109, 252, 0.349)), url("/CF/clase-3/img/city.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+header {
+    color: white;
+}
+
+.nav {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav__list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.hero__main {
+    color: white;
+    padding: 150px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-size: 3rem;
+}
+
+figure {
+    width: 300px;
+    background: teal;
+    margin: auto;
+    margin-top: 80px;
+    position: relative;
+
+}
+
+.figure__img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.figure__description {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em 0;
+}
