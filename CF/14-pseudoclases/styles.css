@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+
+}
+
+.button{
+    max-width: 150px;
+    padding: 15px 30px;
+    display: grid;
+    text-decoration: none;
+margin-top: 15px;
+margin-left: 15px;}
+    
+
+.button1{
+    background-color: red;
+    color: white;
+}
+
+.button2{
+    background-color: green;
+    color: white;
+}
+
+.button3{
+    background-color: blueviolet;
+    color: white;
+}
+
+.button4{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+.button4:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.button3:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.button:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+}
+
+.button:active{
+    font-size: 14px;
+}

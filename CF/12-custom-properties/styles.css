@@ -1,0 +1,35 @@
+:root{
+    --bordes_colores: 5px dashed green;
+    --color_principal: white;
+    --padding_botones:30px 60px;
+}
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial';
+}
+
+.title{
+    border: var(--bordes_colores);
+    color: royalblue;
+    color:var(--color_principal);
+}
+
+.btn{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 15px 30px;
+    display: inline-block;
+    border: var(--bordes_colores);
+    padding: var(--padding_botones);
+}
+
+.paragraph{
+    color: royalblue;
+    border: var(--bordes_colores);
+    color: color:var(--color_principal);
+}

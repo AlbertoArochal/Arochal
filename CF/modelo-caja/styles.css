@@ -1,0 +1,18 @@
+.contenedor{
+    background-color: sandybrown;
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+.item{
+    background-color: springgreen;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: -12px;
+    writing-mode: vertical-lr;
+    direction: rtl;
+    border-block-start: 10px solid green;
+    border-block-end: 10px solid crimson;
+    border-inline: 15px solid yellow;
+}

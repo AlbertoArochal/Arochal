@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+
+}
+
+.element{
+    margin: 80px auto;
+    width: 50%;
+    height: 200px;
+    background-color: royalblue;
+}
+
+@media (max-width: 500px){
+    body {
+        background-color: aqua;
+    }
+    .element{
+        background-color: blueviolet;
+
+    }
+}
+
+@media (min-width: 300px){
+    body{
+        background: yellowgreen;
+    }
+    .element{
+        background-color: aliceblue;
+    }
+}

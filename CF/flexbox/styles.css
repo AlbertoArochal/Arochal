@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    width: 90%;
+    max-width: 800px;
+    min-height: 600px;
+    max-height: 600px;
+    margin: 80px auto;
+    outline: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.element{
+    color:white;
+    font-size: 2rem;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    flex-basis: 50px;
+
+}
+.element1{
+    background-color: red;
+}
+.element2{
+    background-color: purple;
+}
+.element3{
+    background-color: steelblue;
+}

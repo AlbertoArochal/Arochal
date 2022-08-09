@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+.element{
+    margin:80px auto;
+    width: 200px;
+    height: 200px;
+    background-color: slateblue;
+    box-shadow: 0 0 10px blue, 14px 15px 10px pink ;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-position: center;
+}
+
+.element1{
+    background-image: url('/CF/13-grid/img/image3.jpg');
+}
+.element2{
+    background-image: url("/CF/13-grid/img/image5.jpeg");
+    background-position: center;
+    background-size: cover;
+}
