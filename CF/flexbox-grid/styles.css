@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 10px;
+    outline: 3px solid black;
+    display: grid;
+    grid-template-columns: 100px 200px 100px 200px;
+    grid-template-rows: 200px 200px 200px;
+    height: 1000px;
+}
+
+.container--item {
+    padding: 20px;
+
+
+}
+.item1{
+    background: red;
+}
+.item2{
+    background-color: steelblue;
+}
+.item3{
+    background-color: aqua;
+}
+.item4{
+    background-color: orange;
+}

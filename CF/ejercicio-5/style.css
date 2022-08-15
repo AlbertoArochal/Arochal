@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    max-width: 500px;
+    max-height: 700px;
+    border: 1px solid #04146c;
+    font-family: "Source Sans 3";
+    margin: 20px;
+    display: flexbox;
+    text-align: center ;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.card__lema{
+    background-color: #04146c;
+    color: white;
+    justify-content: flex-start;
+    padding:0px;
+    font-weight: 400;
+}
+
+.card__title{
+    color: #04146c;
+    padding: 25px 0;
+    font-weight: 700;
+    font-size: 33pt;
+    
+}
+
+.card__subtitle{
+    color: #04146c;
+    margin-bottom: 10px;
+}
+
+.card__figure{
+    max-width: 350px;
+    margin: auto;
+    border: 1px solid #04146c;
+    display: flex;}
+
+.card__description{
+    color: #04146c;
+    background-color: #edf7ff;
+    margin: 15px auto;
+    padding: 0 60px;
+}
+
+.container{
+    max-width: 350px;
+}

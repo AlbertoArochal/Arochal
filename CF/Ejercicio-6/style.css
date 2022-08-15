@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-elements:center;
+    margin: auto;
+    margin-top: 10px;
+
+font-family: "Roboto";
+}
+
+.card__description{
+    font-size: 32px;
+    max-width: 450px;
+    padding: 20px 0;
+    color: #04146c;
+}
+
+.card__title{
+    font-weight: 700;
+    font-size: 64px;
+    color: #0a2ff1;
+}
+
+.card__container{
+    margin: auto 0;
+}
+
+.card__figure{
+    width: 25%;
+}
+.card__img{
+    max-width: 300px;
+}
+
+.card__calification{
+    font-size: 16px;
+    color: #04146c;
+}
+
+.card__img2{
+    max-width: 150px;
+}
+
+

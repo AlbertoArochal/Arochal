@@ -1,0 +1,81 @@
+:root{
+    -white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+    --font-links: 'Alata', sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.nav__element{
+    display: inline;
+}
+
+.nav__link{
+    text-decoration: none;
+    font-family: var(--font-links);
+    color: white;
+}
+
+.hero{
+    background-image: url("/CF/loopstudios-landing-page-main/images/mobile/image-hero.jpg");
+    align-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav__logo{
+    padding-top: 30px;
+}
+
+.nav__icon{
+    padding-top: 37px;
+    align-self: flex-start;
+}
+
+.nav{
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.nav__list{
+    display: none;
+}
+
+.container{
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+}
+
+.hero__title{
+    color: white;
+    
+}
+
+.hero_main{
+    height: calc(100%-100px);
+    display: flex;
+    align-items: center;
+}
+
+.hero__title{
+    font-size: 2.1rem;
+    border: 3px solid;
+    padding: .6em;
+    max-width: 300px;
+}
