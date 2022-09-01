@@ -1,17 +1,17 @@
-:root{
+:root {
     --azul_oscuro: #122250;
     --azul: #366bff;
     --azul-claro: #c9d6fa;
     --rosa: #ff2eab;
 }
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+body {
     font-family: "Roboto";
     font-weight: 600;
     font-size: 16px;
@@ -19,32 +19,32 @@ body{
 
 /* Utilidades */
 
-.container{
+.container {
     width: 1104px;
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.text-s{
+.text-s {
     font-size: 0.875rem;
 }
 
-.text-m{
+.text-m {
     font-size: 1.25rem;
 }
 
-.text-l{
+.text-l {
     font-size: 2.75rem;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 /* Componentes */
 
-.main__nav{
+.main__nav {
     margin-top: 1.5rem;
     color: black;
     display: grid;
@@ -54,56 +54,57 @@ body{
 
 }
 
-.main__list{
+.main__list {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
-.main__list ul a{
+
+.main__list ul a {
     color: black;
 }
 
-.cover{
+.cover {
     padding-top: 4.8rem;
     padding-bottom: 5.1rem;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(218,218,254,0.3295693277310925) 0%, rgba(201,214,250,1) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(218, 218, 254, 0.3295693277310925) 0%, rgba(201, 214, 250, 1) 100%);
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.main-header{
-    display:grid;
+.main-header {
+    display: grid;
     grid-template-columns: 1fr 400px;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas:     "texto-uno imagen"
-    "texto-principal imagen"
-    "texto-secundario imagen";
+    grid-template-areas: "texto-uno imagen"
+        "texto-principal imagen"
+        "texto-secundario imagen";
     column-gap: min(9rem, 10vw);
 }
 
-.main-header img{
+.main-header img {
     grid-area: imagen;
 }
 
-.cover-portrait{
+.cover-portrait {
     min-width: 80%;
     margin: auto;
     border-radius: 50%;
-    border:#ff2eab solid 3px;
+    border: #ff2eab solid 3px;
 }
 
-.cover-fondo{
+.cover-fondo {
     border-radius: 50%;
 
 }
 
-.main-header p{
+.main-header p {
     align-self: flex-start;
 }
 
-.green-dot{
+.green-dot {
     height: 0.625rem;
     width: 0.625rem;
     background-color: rgb(2, 151, 64);
@@ -111,16 +112,16 @@ img{
     border-radius: 50%;
 }
 
-.text-accent{
+.text-accent {
     color: var(--rosa);
 }
 
-.projects{
+.projects {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.benefits{
+.benefits {
     padding-top: 96px;
     padding-bottom: 96px;
     font-family: "Roboto";
@@ -128,41 +129,41 @@ img{
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(201, 214, 250, 0.2));
 }
 
-.container-small{
-    width:502px;
+.container-small {
+    width: 502px;
     margin: auto;
 }
 
-.benefits h2{
+.benefits h2 {
     font-size: 2.5rem;
     line-height: 3.75rem;
     margin: 0;
 }
 
-.benefits p{
+.benefits p {
     font-weight: 400;
     margin-top: 8px;
 }
 
-.skills{
+.skills {
     display: grid;
     margin: 0;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     padding: 50px 0;
     gap: 3.75rem;
     text-align: center;
 }
 
-.skills .skill{
+.skills .skill {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.skills .icon{
-    border:#122250 solid 1px;
+.skills .icon {
+    border: #122250 solid 1px;
     border-radius: 50%;
     width: 4.25rem;
     height: 4.25rem;
@@ -171,5 +172,3 @@ img{
     justify-content: center;
 
 }
-
-
