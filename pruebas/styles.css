@@ -1,0 +1,15 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+}
+.circle-container {
+  flex: 1;
+}
+.circle {
+  color: #2F7285;
+}
+.circle--main {
+  color: #5E66FF;
+}
