@@ -8,7 +8,11 @@ from sqlalchemy import null, true
     authors
     num_pages
     '''
+<<<<<<< HEAD
     '''def add_book(title = input('Introduce title: '), 
+=======
+def add_book(title = input('Introduce title: '), 
+>>>>>>> feature.readme
     authors = input('Author(s): '), 
     num_pages = input('Number of Pages: '),
     age_rating = input('Average Rating: '), 
@@ -62,7 +66,11 @@ import pandas as pd
 def consult_book(IDconsult = input('Introduce Book_ID to consult: ')):
     book_cols = ['bookID', 'title', 'authors', 'average_rating', '  num_pages']
     book_catalogue = pd.read_csv('/home/arochal/repos/Arochal/library/data/data/books.csv', usecols = book_cols)
+<<<<<<< HEAD
     print(book_catalogue.loc[book_catalogue['bookID'] == int(IDconsult)])'''
+=======
+    print(book_catalogue.loc[book_catalogue['bookID'] == int(IDconsult)])
+>>>>>>> feature.readme
 
 
 
